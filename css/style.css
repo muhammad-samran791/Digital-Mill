@@ -366,6 +366,6 @@ a.text-muted:hover {
 @media (max-width: 450px) and (orientation: portrait) {
   html,
   body {
-    font-size: 70%;
+    font-size: 80%;
   }
 }
