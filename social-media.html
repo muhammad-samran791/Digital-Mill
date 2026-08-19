@@ -1,0 +1,464 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Social Media Management | The Digital Mill</title>
+  </head>
+  <body data-page="social-media">
+    <div class="progress-circle" onclick="scrollToTop()">
+      <div class="progress-inner">
+        <div class="arrow"></div>
+        <div class="percentage">0%</div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container">
+        <a
+          class="navbar-brand p-0 bg-them-one"
+          href="index.html"
+          data-aos="fade-right"
+        >
+          <span class="logo">The Digital Mill</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="index.html"
+                data-page="home"
+                data-aos="fade-down"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="branding.html"
+                data-page="branding"
+                data-aos="fade-down"
+                data-aos-delay="300"
+                >Branding</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="social-media.html"
+                data-page="social-media"
+                data-aos="fade-down"
+                data-aos-delay="700"
+                >Social Media</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="portfolio.html"
+                data-page="portfolio"
+                data-aos="fade-down"
+                data-aos-delay="1000"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <button
+                id="themeToggle"
+                class="btn btn-sm text-hover-them-one"
+                data-aos="fade-down"
+                data-aos-delay="1300"
+              >
+                <i class="fa-solid fa-moon fs-5"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero hero-inner hero-dark-bg box-light-shadow">
+      <video
+        src="https://videos.pexels.com/video-files/6562012/6562012-uhd_2560_1440_25fps.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="hero-content" data-aos="zoom-in">
+        <h1 class="display-3 fw-normal">Grow Where Your Audience Is</h1>
+        <p class="lead">
+          Content, scheduling, and community management across every major
+          platform.
+        </p>
+        <div class="mt-3">
+          <a
+            href="index.html#join"
+            class="btn btn-lg custom-btn bg-them-one text-light"
+            >Get a Free Audit</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container text-center py-5" data-aos="zoom-in">
+        <h1 class="display-4 fw-normal">Platforms We Manage</h1>
+        <p class="lead">We meet your audience wherever they scroll.</p>
+      </div>
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-lg-2 col-md-4 col-6 platform-tile" data-aos="zoom-in">
+            <i class="fab fa-instagram text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">Instagram</h6>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-6 platform-tile"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <i class="fab fa-facebook text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">Facebook</h6>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-6 platform-tile"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <i class="fab fa-tiktok text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">TikTok</h6>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-6 platform-tile"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <i class="fab fa-linkedin text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">LinkedIn</h6>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-6 platform-tile"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <i class="fab fa-x-twitter text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">X</h6>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-6 platform-tile"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <i class="fab fa-youtube text-them-one"></i>
+            <h6 class="mt-2 fw-semibold">YouTube</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="position-relative overflow-hidden service-section bg-them-two my-5 box-light-shadow"
+    >
+      <div class="container py-5 position-relative" style="z-index: 2">
+        <div class="text-center mb-5" data-aos="zoom-in">
+          <h1 class="text-dark display-4 fw-normal">What's Included</h1>
+          <p class="lead text-dark fw-normal">
+            Every social media package covers these essentials.
+          </p>
+        </div>
+        <div
+          class="d-flex flex-lg-row flex-md-column flex-column justify-content-center align-items-stretch"
+        >
+          <div
+            class="card m-2 rounded-3 box-dark-shadow col-lg-4 col-md-10 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Content Calendar</h5>
+              <p class="card-text">
+                A planned monthly calendar of posts, stories, and captions,
+                reviewed with you before it goes live.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card m-2 rounded-3 box-dark-shadow col-lg-4 col-md-10 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Community Management</h5>
+              <p class="card-text">
+                Comments and DMs answered promptly, so your audience always
+                feels heard.
+              </p>
+            </div>
+          </div>
+          <div
+            class="card m-2 rounded-3 box-dark-shadow col-lg-4 col-md-10 col-12"
+            data-aos="zoom-in"
+          >
+            <div class="card-body">
+              <h5 class="card-title">Monthly Reporting</h5>
+              <p class="card-text">
+                Clear reach, engagement, and follower-growth numbers, explained
+                in plain language.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul
+        class="circles list-unstyled m-0 p-0 position-absolute top-0 start-0 w-100 h-100"
+      >
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </section>
+
+    <section>
+      <div class="container text-center py-5" data-aos="zoom-in">
+        <h1 class="display-4 fw-normal">See It In Action</h1>
+        <p class="lead">Browse campaigns we've run for other brands.</p>
+        <a
+          href="portfolio.html"
+          class="btn btn-lg custom-btn bg-them-one text-light mt-2"
+          >View Full Portfolio</a
+        >
+      </div>
+    </section>
+
+    <footer class="pt-5 mt-5 box-light-shadow">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center border-bottom border-secondary pb-4"
+          data-aos="zoom-in"
+        >
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-map-marker-alt text-them-one fs-3 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Find us</h5>
+                <small class="text-muted"
+                  >1010 Avenue, sw 54321, chandigarh</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone fs-3 me-3 text-them-one"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Call us</h5>
+                <small class="text-muted">+1234567890</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="far fa-envelope-open fs-3 me-3 text-them-one"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Mail us</h5>
+                <small class="text-muted">contact@thedigitalmill.com</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5" data-aos="zoom-in">
+          <div class="col-lg-12 mb-4 text-lg-start text-md-center text-center">
+            <a
+              class="navbar-brand p-3 pe-0 ps-0 bg-them-one box-dark-shadow"
+              href="index.html"
+            >
+              <span class="logo">The Digital Mill</span>
+            </a>
+            <p class="text-muted small mt-4">
+              Your partner in digital branding solutions.
+            </p>
+            <div>
+              <h6 class="fw-bold mb-3">Follow us</h6>
+              <a href="#" class="btn btn-primary btn-sm rounded-circle me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="btn btn-info btn-sm rounded-circle me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="btn btn-danger btn-sm rounded-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="fw-semibold position-relative mb-4">
+              Useful Links
+              <span
+                class="position-absolute start-0 bottom-0 bg-them-one"
+                style="height: 2px; width: 50px"
+              ></span>
+            </h5>
+            <div class="row">
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#about"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#services"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="portfolio.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#join"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="branding.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Branding</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="social-media.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Social Media</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#reviews"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#join"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Get Started</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-8 m-auto text-lg-start text-md-start text-center"
+          >
+            <h5
+              class="fw-semibold position-relative mb-4"
+              style="text-decoration: underline #cc6333"
+            >
+              Subscribe
+            </h5>
+            <p class="text-muted small">
+              Don’t miss to subscribe to our new feeds, kindly fill the form
+              below.
+            </p>
+            <form id="newsletterForm" class="d-flex">
+              <input
+                type="email"
+                class="form-control me-1"
+                placeholder="Email Address"
+                required
+              />
+              <button type="submit" class="btn bg-them-one">
+                <i class="fab fa-telegram-plane fa-2x"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bg-them-one py-3 box-light-shadow">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-between align-items-center"
+        >
+          <p class="mb-0 small text-light">© 2025. All rights reserved.</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Home</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Privacy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html#join" class="text-light text-decoration-none"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

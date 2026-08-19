@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio | The Digital Mill</title>
+  </head>
+  <body data-page="portfolio">
+    <div class="progress-circle" onclick="scrollToTop()">
+      <div class="progress-inner">
+        <div class="arrow"></div>
+        <div class="percentage">0%</div>
+      </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top p-0">
+      <div class="container">
+        <a
+          class="navbar-brand p-0 bg-them-one"
+          href="index.html"
+          data-aos="fade-right"
+        >
+          <span class="logo">The Digital Mill</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="index.html"
+                data-page="home"
+                data-aos="fade-down"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="branding.html"
+                data-page="branding"
+                data-aos="fade-down"
+                data-aos-delay="300"
+                >Branding</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="social-media.html"
+                data-page="social-media"
+                data-aos="fade-down"
+                data-aos-delay="700"
+                >Social Media</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <a
+                class="nav-link active nav-hover fs-6"
+                href="portfolio.html"
+                data-page="portfolio"
+                data-aos="fade-down"
+                data-aos-delay="1000"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item ms-3">
+              <button
+                id="themeToggle"
+                class="btn btn-sm text-hover-them-one"
+                data-aos="fade-down"
+                data-aos-delay="1300"
+              >
+                <i class="fa-solid fa-moon fs-5"></i>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero hero-inner hero-dark-bg box-light-shadow">
+      <video
+        src="https://videos.pexels.com/video-files/6562012/6562012-uhd_2560_1440_25fps.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+      ></video>
+      <div class="hero-content" data-aos="zoom-in">
+        <h1 class="display-3 fw-normal">Our Portfolio</h1>
+        <p class="lead">
+          A look at the branding and social media work we're proud of.
+        </p>
+      </div>
+    </header>
+
+    <section>
+      <div class="container py-5">
+        <div class="text-center mb-4 portfolio-filters" data-aos="zoom-in">
+          <button class="btn active" data-filter="all">All Work</button>
+          <button class="btn" data-filter="branding">Branding</button>
+          <button class="btn" data-filter="social">Social Media</button>
+        </div>
+
+        <div class="row g-4">
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="branding"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1649015931204-15a3c789e6ea?auto=format&fit=crop&w=600&h=450"
+                alt="Logo concept work for a cafe brand"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Brewhouse Cafe</h5>
+                <p class="small mb-0">Logo &amp; identity system</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="branding"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1485531865381-286666aa80a9?auto=format&fit=crop&w=600&h=450"
+                alt="Brand style guide layout for a fitness studio"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Pulse Fitness</h5>
+                <p class="small mb-0">Full brand guidelines</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="social"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1585065799297-ce07d1855c01?auto=format&fit=crop&w=600&h=450"
+                alt="Instagram content grid for a skincare brand"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Glowe Skincare</h5>
+                <p class="small mb-0">Instagram content &amp; growth</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="social"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1495224814653-94f36c0a31ea?auto=format&fit=crop&w=600&h=450"
+                alt="Content planning session for a lifestyle brand"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Nomad Living</h5>
+                <p class="small mb-0">TikTok &amp; community management</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="branding"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1513600684907-999315c1b06b?auto=format&fit=crop&w=600&h=450"
+                alt="Logo sketches for a construction company"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Ironclad Builders</h5>
+                <p class="small mb-0">Logo redesign</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6 col-12 portfolio-col"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+          >
+            <div
+              class="portfolio-item rounded-3 box-dark-shadow"
+              data-category="social"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1649015931204-15a3c789e6ea?auto=format&fit=crop&w=600&h=450"
+                alt="Social media campaign artwork for a beverage brand"
+              />
+              <div class="portfolio-overlay">
+                <h5 class="fw-bold">Citrus Co.</h5>
+                <p class="small mb-0">Launch campaign, all platforms</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="container text-center py-5" data-aos="zoom-in">
+        <h1 class="display-4 fw-normal">Like What You See?</h1>
+        <p class="lead">Let's talk about your brand.</p>
+        <a
+          href="index.html#join"
+          class="btn btn-lg custom-btn bg-them-one text-light mt-2"
+          >Get Started</a
+        >
+      </div>
+    </section>
+
+    <footer class="pt-5 mt-5 box-light-shadow">
+      <div class="container">
+        <div
+          class="d-flex flex-wrap align-items-center justify-content-center border-bottom border-secondary pb-4"
+          data-aos="zoom-in"
+        >
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-map-marker-alt text-them-one fs-3 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Find us</h5>
+                <small class="text-muted"
+                  >1010 Avenue, sw 54321, chandigarh</small
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="fas fa-phone fs-3 me-3 text-them-one"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Call us</h5>
+                <small class="text-muted">+1234567890</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-4">
+            <div class="d-flex align-items-center">
+              <i class="far fa-envelope-open fs-3 me-3 text-them-one"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Mail us</h5>
+                <small class="text-muted">contact@thedigitalmill.com</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row py-5" data-aos="zoom-in">
+          <div class="col-lg-12 mb-4 text-lg-start text-md-center text-center">
+            <a
+              class="navbar-brand p-3 pe-0 ps-0 bg-them-one box-dark-shadow"
+              href="index.html"
+            >
+              <span class="logo">The Digital Mill</span>
+            </a>
+            <p class="text-muted small mt-4">
+              Your partner in digital branding solutions.
+            </p>
+            <div>
+              <h6 class="fw-bold mb-3">Follow us</h6>
+              <a href="#" class="btn btn-primary btn-sm rounded-circle me-2"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a href="#" class="btn btn-info btn-sm rounded-circle me-2"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              <a href="#" class="btn btn-danger btn-sm rounded-circle"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <h5 class="fw-semibold position-relative mb-4">
+              Useful Links
+              <span
+                class="position-absolute start-0 bottom-0 bg-them-one"
+                style="height: 2px; width: 50px"
+              ></span>
+            </h5>
+            <div class="row">
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#about"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#services"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="portfolio.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#join"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Contact</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <ul class="list-unstyled">
+                  <li>
+                    <a
+                      href="branding.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Branding</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="social-media.html"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Social Media</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#reviews"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Reviews</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="index.html#join"
+                      class="text-muted text-decoration-none d-block mb-2"
+                      >Get Started</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-4 col-8 m-auto text-lg-start text-md-start text-center"
+          >
+            <h5
+              class="fw-semibold position-relative mb-4"
+              style="text-decoration: underline #cc6333"
+            >
+              Subscribe
+            </h5>
+            <p class="text-muted small">
+              Don’t miss to subscribe to our new feeds, kindly fill the form
+              below.
+            </p>
+            <form id="newsletterForm" class="d-flex">
+              <input
+                type="email"
+                class="form-control me-1"
+                placeholder="Email Address"
+                required
+              />
+              <button type="submit" class="btn bg-them-one">
+                <i class="fab fa-telegram-plane fa-2x"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bg-them-one py-3 box-light-shadow">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-between align-items-center"
+        >
+          <p class="mb-0 small text-light">© 2025. All rights reserved.</p>
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="index.html" class="text-light text-decoration-none"
+                >Home</a
+              >
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Terms</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Privacy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="text-light text-decoration-none">Policy</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="index.html#join" class="text-light text-decoration-none"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
